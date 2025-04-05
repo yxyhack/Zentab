@@ -19,10 +19,40 @@ A browser extension that automatically manages and cleans up tabs that haven't b
 
 ## Screenshots
 
-<div align="center">
-  <img src="screenshots/settings.png" alt="Settings" width="280">
-  <img src="screenshots/history.png" alt="History" width="280">
-  <img src="screenshots/whitelist.png" alt="Whitelist" width="280">
+<div align="center" style="
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 10px 0;
+">
+  <img src="screenshots/settings.png" alt="设置界面" style="
+      flex: 1;
+      min-width: 280px;
+      max-width: 32%;
+      height: auto;
+      object-fit: contain;
+      vertical-align: top;
+  ">
+  <img src="screenshots/history.png" alt="历史记录界面" style="
+      flex: 1;
+      min-width: 280px;
+      max-width: 32%;
+      height: auto;
+      object-fit: contain;
+      vertical-align: top;
+  ">
+  <img src="screenshots/whitelist.png" alt="白名单界面" style="
+      flex: 1;
+      min-width: 280px;
+      max-width: 32%;
+      height: auto;
+      object-fit: contain;
+      vertical-align: top;
+  ">
 </div>
 
 ## Installation
@@ -90,10 +120,40 @@ Zentab respects your privacy:
 
 ## 截图
 
-<div align="center">
-  <img src="screenshots/settings.png" alt="设置界面" width="280">
-  <img src="screenshots/history.png" alt="历史记录界面" width="280">
-  <img src="screenshots/whitelist.png" alt="白名单界面" width="280">
+<div align="center" style="
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 10px 0;
+">
+  <img src="screenshots/settings.png" alt="设置界面" style="
+      flex: 1;
+      min-width: 280px;
+      max-width: 32%;
+      height: auto;
+      object-fit: contain;
+      vertical-align: top;
+  ">
+  <img src="screenshots/history.png" alt="历史记录界面" style="
+      flex: 1;
+      min-width: 280px;
+      max-width: 32%;
+      height: auto;
+      object-fit: contain;
+      vertical-align: top;
+  ">
+  <img src="screenshots/whitelist.png" alt="白名单界面" style="
+      flex: 1;
+      min-width: 280px;
+      max-width: 32%;
+      height: auto;
+      object-fit: contain;
+      vertical-align: top;
+  ">
 </div>
 
 ## 安装方法
