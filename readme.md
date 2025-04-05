@@ -14,7 +14,7 @@ A browser extension that automatically manages and cleans up tabs that haven't b
 - **Customizable Threshold**: Set your own time threshold for automatic tab closure (default: 35 hours)
 - **Whitelist Support**: Add important websites to the whitelist to prevent them from being closed
 - **Complete History**: View and restore closed tabs with a complete browsing history
-- **Multi-language Support**: Available in English, Simplified Chinese, and Traditional Chinese (Hong Kong)
+- **Multi-language Support**: Available in English, Simplified Chinese, and Traditional Chinese
 - **Beautiful UI**: Clean and intuitive interface with gradient design
 
 ## Screenshots
@@ -115,7 +115,7 @@ Zentab respects your privacy:
 - **自定义时间阈值**：设置标签页自动关闭的时间阈值（默认：35小时）
 - **白名单支持**：将重要网站添加到白名单，防止被自动关闭
 - **完整历史记录**：查看和恢复已关闭的标签页，包含完整的浏览历史
-- **多语言支持**：支持英文、简体中文和繁体中文（香港）
+- **多语言支持**：支持英文、简体中文和繁体中文
 - **精美界面**：干净直观的界面设计，采用渐变色设计
 
 ## 截图
