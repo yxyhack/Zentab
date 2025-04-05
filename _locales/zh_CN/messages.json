@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Zentab 标签页自动清理器",
+    "description": "扩展名称"
+  },
+  "appDescription": {
+    "message": "自动管理和清理长时间未使用的浏览器标签页",
+    "description": "扩展描述"
+  }
+} 

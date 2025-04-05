@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zentab</title>
+    <link rel="stylesheet" href="../css/popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="../images/icon48.png" alt="Zentab Logo" class="header-logo">
+            </div>
+            <h1>Zentab</h1>
+        </header>
+        
+        <div class="tabs">
+            <div class="tab-header">
+                <button class="tab-btn active" data-tab="settings">设置</button>
+                <button class="tab-btn" data-tab="history">历史记录</button>
+                <button class="tab-btn" data-tab="whitelist">白名单</button>
+            </div>
+            
+            <div class="tab-content">
+                <!-- 设置面板 -->
+                <div class="tab-pane active" id="settings-tab">
+                    <div class="form-group">
+                        <label for="inactive-threshold">标签页自动关闭时间阈值</label>
+                        <div class="time-inputs">
+                            <div class="time-input-container">
+                                <input type="number" id="inactive-threshold-hours" min="0" max="720" value="35">
+                                <span class="time-input-text">小时</span>
+                            </div>
+                            <div class="time-input-container">
+                                <input type="number" id="inactive-threshold-minutes" min="0" max="59" value="0">
+                                <span class="time-input-text">分钟</span>
+                            </div>
+                        </div>
+                        <small class="form-text">超过设定时间未访问的标签页将被自动关闭</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <input type="checkbox" id="enable-notifications" checked>
+                            <label for="enable-notifications">启用关闭通知</label>
+                        </div>
+                        <small class="form-text">标签页自动关闭时显示通知</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="language-select">语言设置</label>
+                        <select id="language-select" class="select-input">
+                            <option value="en">English</option>
+                            <option value="zh-CN">简体中文</option>
+                            <option value="zh-HK">繁體中文</option>
+                        </select>
+                        <small class="form-text">更改扩展程序的显示语言</small>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button id="save-settings" class="btn btn-primary">保存设置</button>
+                    </div>
+                </div>
+                
+                <!-- 历史记录面板 -->
+                <div class="tab-pane" id="history-tab">
+                    <div class="history-header">
+                        <h2>已关闭的标签页</h2>
+                        <div class="history-actions">
+                            <button id="refresh-history" class="btn btn-sm">刷新</button>
+                            <button id="clear-history" class="btn btn-sm btn-danger">清空</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group search-container">
+                        <div class="input-group">
+                            <input type="text" id="history-search" placeholder="搜索标题、URL或域名...">
+                            <button id="clear-search" class="btn btn-sm">✕</button>
+                        </div>
+                    </div>
+                    
+                    <div class="history-list" id="history-list">
+                        <div class="empty-state">
+                            <p>暂无关闭记录</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 白名单面板 -->
+                <div class="tab-pane" id="whitelist-tab">
+                    <div class="whitelist-header">
+                        <h2>白名单</h2>
+                        <div class="whitelist-actions">
+                            <button id="add-current-to-whitelist" class="btn btn-sm">添加当前页面</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="whitelist-url">添加网站到白名单</label>
+                        <div class="input-group">
+                            <input type="text" id="whitelist-url" placeholder="输入完整URL (https://example.com/path)">
+                            <button id="add-to-whitelist" class="btn">添加</button>
+                        </div>
+                        <small class="form-text">白名单中的网站根据精确URL匹配，不会被自动关闭</small>
+                    </div>
+                    
+                    <div class="whitelist-list" id="whitelist-list">
+                        <div class="empty-state">
+                            <p>暂无白名单记录</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Zentab v1.0.0</p>
+        </footer>
+    </div>
+    
+    <!-- 添加成功提示 -->
+    <div id="toast" class="toast">已添加到白名单</div>
+    
+    <!-- 自定义确认对话框 -->
+    <div id="confirm-dialog-overlay" class="confirm-dialog-overlay" style="display: none;">
+        <div class="confirm-dialog">
+            <h3 id="confirm-dialog-title" class="confirm-dialog-title"></h3>
+            <p id="confirm-dialog-message" class="confirm-dialog-message"></p>
+            <div class="confirm-dialog-buttons">
+                <button id="confirm-dialog-cancel" class="confirm-dialog-button confirm-dialog-cancel"></button>
+                <button id="confirm-dialog-confirm" class="confirm-dialog-button confirm-dialog-confirm"></button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/i18n.js"></script>
+    <script src="../js/popup.js"></script>
+</body>
+</html>

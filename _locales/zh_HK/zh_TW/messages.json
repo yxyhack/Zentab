@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Zentab",
+    "description": "擴展名稱"
+  },
+  "appDescription": {
+    "message": "自動清理長時間未活躍的標籤頁，提高瀏覽器性能",
+    "description": "擴展描述"
+  }
+} 
