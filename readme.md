@@ -57,7 +57,7 @@ A browser extension that automatically manages and cleans up tabs that haven't b
 
 ## Installation
 
-1. Download the extension from Chrome Web Store (link to be added)
+1. Download the extension from Chrome Web Store [install](https://chromewebstore.google.com/detail/adcckhibigginnidiinpggamipkmmcml?utm_source=item-share-cb)
 2. Click "Add to Chrome" to install the extension
 3. The Zentab icon will appear in your browser toolbar
 
@@ -166,7 +166,7 @@ Zentab respects your privacy:
 
 ## 安装方法
 
-1. 从Chrome网上应用店下载扩展（链接待添加）
+1. 从Chrome网上应用店下载扩展  [立即安装](https://chromewebstore.google.com/detail/adcckhibigginnidiinpggamipkmmcml?utm_source=item-share-cb)
 2. 点击"添加到Chrome"安装扩展
 3. Zentab图标将出现在浏览器工具栏中
 
